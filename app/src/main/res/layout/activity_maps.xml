@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:colorBackground">
+
+    <!-- Фрагмент с картой -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Кнопка "Мое местоположение" -->
+    <Button
+        android:id="@+id/current_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мое местоположение"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?android:colorAccent"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка "Построить маршрут" -->
+    <Button
+        android:id="@+id/button_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Построить маршрут"
+        android:layout_above="@id/current_location_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?android:colorPrimary"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка "Мой аккаунт" -->
+    <Button
+        android:id="@+id/buttonAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мой аккаунт"
+        android:layout_above="@id/button_route"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?android:colorButtonNormal"
+        android:textColor="?android:textColorPrimary"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка "Выход" -->
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выход"
+        android:layout_above="@id/buttonAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?android:colorError"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <!-- Группа радиокнопок для фильтрации -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет фильтра"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioSights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Достопримечательности"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioRestaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рестораны"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioHostels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Хостелы"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+    </RadioGroup>
+
+</RelativeLayout>

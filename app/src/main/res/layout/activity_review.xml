@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:colorBackground">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить отзыв"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Поле ввода имени пользователя -->
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ваше имя"
+        android:layout_marginBottom="12dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/rounded_edit_text_background"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary" />
+
+    <!-- Поле ввода отзыва -->
+    <EditText
+        android:id="@+id/review_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ваш отзыв"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/rounded_edit_text_background"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary" />
+
+    <!-- Рейтинг -->
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка отправки отзыва -->
+    <Button
+        android:id="@+id/button_submit_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить отзыв"
+        android:backgroundTint="?android:colorButtonNormal"
+        android:textColor="?android:textColorPrimary"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

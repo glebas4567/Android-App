@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:colorBackground">
+
+    <!-- Поле ввода имени пользователя -->
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя"
+        android:layout_marginBottom="12dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/rounded_edit_text_background"
+        android:inputType="textPersonName"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary" />
+
+    <!-- Поле ввода пароля -->
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/rounded_edit_text_background"
+        android:inputType="textPassword"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:backgroundTint="?android:colorButtonNormal"
+        android:textColor="?android:textColorPrimary"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+
+    <!-- Кнопка регистрации -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:backgroundTint="?android:colorButtonNormal"
+        android:textColor="?android:textColorPrimary"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

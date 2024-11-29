@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:colorBackground">
+
+    <!-- Изображение объекта -->
+    <ImageView
+        android:id="@+id/objectImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sophisky"
+        android:contentDescription="@string/object_image" />
+
+    <!-- Название объекта -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название объекта"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:textColor="?android:textColorPrimary" />
+
+    <!-- Время работы -->
+    <TextView
+        android:id="@+id/workingHoursTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время работы"
+        android:paddingTop="8dp"
+        android:textColor="?android:textColorSecondary" />
+
+    <!-- Детальная информация -->
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Детальная информация"
+        android:paddingTop="8dp"
+        android:textColor="?android:textColorSecondary" />
+
+    <!-- Координаты -->
+    <TextView
+        android:id="@+id/coordinatesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Координаты: Широта, Долгота"
+        android:paddingTop="8dp"
+        android:textColor="?android:textColorSecondary" />
+
+    <!-- Кнопки для взаимодействия -->
+    <Button
+        android:id="@+id/buttonAddReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить отзыв"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:colorAccent"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить в избранное"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:colorPrimary"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonViewReviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть отзывы"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:colorButtonNormal"
+        android:textColor="?android:textColorPrimary"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonShowMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Карта"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:colorSecondary"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?android:colorError"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

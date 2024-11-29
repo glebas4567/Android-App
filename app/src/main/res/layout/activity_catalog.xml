@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:colorBackground">
+
+    <!-- Заголовок каталога -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Каталог мест"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="?android:textColorPrimary" />
+
+    <!-- Блок выбора категории и сортировки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Группа переключателей категорий -->
+        <RadioGroup
+            android:id="@+id/radioGroupCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioSight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sights"
+                android:textColor="?android:textColorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioRestaurant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cafes"
+                android:textColor="?android:textColorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioHostel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hostels"
+                android:textColor="?android:textColorPrimary" />
+
+            <RadioButton
+                android:id="@+id/radioAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="All"
+                android:textColor="?android:textColorPrimary" />
+        </RadioGroup>
+
+        <!-- Кнопка сортировки -->
+        <Button
+            android:id="@+id/buttonSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сортировать"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="?android:colorAccent"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:paddingVertical="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Список мест -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        android:divider="?android:dividerHorizontal"
+        android:dividerHeight="1dp" />
+</LinearLayout>
