@@ -30,6 +30,12 @@ public class FavoritePlacesManager {
         favoritePlaces.add(place);
     }
 
+    public void removePlace(ObjectInfo place) {
+        favoritePlaces.removeIf(favoritePlace -> favoritePlace.getTitle().equals(place.getTitle()));
+    }
+
+
+
     public ArrayList<ObjectInfo> getFavoritePlaces() {
         return favoritePlaces;
     }

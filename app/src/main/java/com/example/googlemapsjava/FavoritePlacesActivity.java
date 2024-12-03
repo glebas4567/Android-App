@@ -43,4 +43,3 @@ public class FavoritePlacesActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
-
